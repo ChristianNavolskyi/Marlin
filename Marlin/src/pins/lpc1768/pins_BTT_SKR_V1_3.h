@@ -74,6 +74,8 @@
 #else
   #define Z_MIN_PIN                        P1_25  // Z-
   #define Z_MAX_PIN                        P1_24  // Z+
+  #define Z2_MAX                           Z_MIN_PIN  // Z2+
+  #define Z2_MIN                           Z_MAX_PIN  // Z2-
 #endif
 
 #define ONBOARD_ENDSTOPPULLUPS                    // Board has built-in pullups
@@ -123,16 +125,25 @@
   #define Z_CS_PIN                         P1_10
 #endif
 
-#define E0_STEP_PIN                        P2_13
-#define E0_DIR_PIN                         P0_11
-#define E0_ENABLE_PIN                      P2_12
+// --------- Added for dual Z-axis --------------
+#define Z2_STEP_PIN                         P2_13
+#define Z2_DIR_PIN                          P0_11
+#define Z2_ENABLE_PIN                       P2_12
+#ifndef Z2_CS_PIN
+  #define Z2_CS_PIN                         P1_08
+#endif
+// ----------------------------------------------
+
+#define E0_STEP_PIN                        P0_01
+#define E0_DIR_PIN                         P0_00
+#define E0_ENABLE_PIN                      P0_10
 #ifndef E0_CS_PIN
-  #define E0_CS_PIN                        P1_08
+  #define E0_CS_PIN                        P1_01
 #endif
 
-#ifndef E1_CS_PIN
-  #define E1_CS_PIN                        P1_01
-#endif
+//#ifndef E1_CS_PIN
+//  #define E1_CS_PIN                        P1_01
+//#endif
 
 //
 // Software SPI pins for TMC2130 stepper drivers
