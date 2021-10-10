@@ -73,9 +73,9 @@
   #endif
 #else
   #define Z_MIN_PIN                        P1_25  // Z-
-  #define Z_MAX_PIN                        P1_24  // Z+
-  #define Z2_MAX                           Z_MIN_PIN  // Z2+
-  #define Z2_MIN                           Z_MAX_PIN  // Z2-
+  //#define Z_MAX_PIN                      P1_24  // Z+
+  //#define Z2_MAX_PIN                     P1_25  // Z-
+  #define Z2_MIN_PIN                       P1_24  // Z+
 #endif
 
 #define ONBOARD_ENDSTOPPULLUPS                    // Board has built-in pullups
