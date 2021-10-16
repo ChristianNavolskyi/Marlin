@@ -111,11 +111,20 @@
   #define X_CS_PIN                         P1_17
 #endif
 
-#define Y_STEP_PIN                         P0_19
-#define Y_DIR_PIN                          P0_20
-#define Y_ENABLE_PIN                       P2_08
+// original Y pins
+//#define Y_STEP_PIN                         P0_19
+//#define Y_DIR_PIN                          P0_20
+//#define Y_ENABLE_PIN                       P2_08
+//#ifndef Y_CS_PIN
+//  #define Y_CS_PIN                         P1_15
+//#endif
+
+// switched with E1 (E0)
+#define Y_STEP_PIN                         P0_01
+#define Y_DIR_PIN                          P0_00
+#define Y_ENABLE_PIN                       P0_10
 #ifndef Y_CS_PIN
-  #define Y_CS_PIN                         P1_15
+  #define Y_CS_PIN                         P1_01
 #endif
 
 #define Z_STEP_PIN                         P0_22
@@ -134,11 +143,20 @@
 #endif
 // ----------------------------------------------
 
-#define E0_STEP_PIN                        P0_01
-#define E0_DIR_PIN                         P0_00
-#define E0_ENABLE_PIN                      P0_10
+// original E1/E0
+//#define E0_STEP_PIN                        P0_01
+//#define E0_DIR_PIN                         P0_00
+//#define E0_ENABLE_PIN                      P0_10
+//#ifndef E0_CS_PIN
+//  #define E0_CS_PIN                        P1_01
+//#endif
+
+// switched with Y
+#define E0_STEP_PIN                        P0_19
+#define E0_DIR_PIN                         P0_20
+#define E0_ENABLE_PIN                      P2_08
 #ifndef E0_CS_PIN
-  #define E0_CS_PIN                        P1_01
+  #define E0_CS_PIN                        P1_15
 #endif
 
 //#ifndef E1_CS_PIN
@@ -182,8 +200,13 @@
   #define X_SERIAL_TX_PIN                  P4_29
   #define X_SERIAL_RX_PIN                  P1_17
 
-  #define Y_SERIAL_TX_PIN                  P1_16
-  #define Y_SERIAL_RX_PIN                  P1_15
+// original Y
+//  #define Y_SERIAL_TX_PIN                  P1_16
+//  #define Y_SERIAL_RX_PIN                  P1_15
+
+// switched with E0
+  #define Y_SERIAL_TX_PIN                  P1_04
+  #define Y_SERIAL_RX_PIN                  P1_01
 
   #define Z_SERIAL_TX_PIN                  P1_14
   #define Z_SERIAL_RX_PIN                  P1_10
@@ -191,8 +214,13 @@
   #define Z2_SERIAL_TX_PIN                 P1_09
   #define Z2_SERIAL_RX_PIN                 P1_08
 
-  #define E0_SERIAL_TX_PIN                 P1_04
-  #define E0_SERIAL_RX_PIN                 P1_01
+// original E0
+//  #define E0_SERIAL_TX_PIN                 P1_04
+//  #define E0_SERIAL_RX_PIN                 P1_01
+
+// switched with Y
+  #define E0_SERIAL_TX_PIN                 P1_16
+  #define E0_SERIAL_RX_PIN                 P1_15
 
   // Reduce baud rate to improve software serial reliability
   #define TMC_BAUD_RATE                    19200
