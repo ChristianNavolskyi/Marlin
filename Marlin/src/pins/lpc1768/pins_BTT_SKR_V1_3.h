@@ -60,8 +60,12 @@
     #define Y_MIN_PIN                      P1_26  // Y+
   #endif
 #else
-  #define Y_MIN_PIN                        P1_27  // Y-
-  #define Y_MAX_PIN                        P1_26  // Y+
+  // original
+  //#define Y_MIN_PIN                        P1_27  // Y-
+  //#define Y_MAX_PIN                        P1_26  // Y+
+  // swapped
+  #define Y_MIN_PIN                        P1_26
+  #define Y_MAX_PIN                        P1_27
 #endif
 
 #ifdef Z_STALL_SENSITIVITY
