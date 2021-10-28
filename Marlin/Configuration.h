@@ -1182,7 +1182,7 @@
  */
 #define NOZZLE_TO_PROBE_X_OFFSET 28
 #define NOZZLE_TO_PROBE_Y_OFFSET -15
-#define NOZZLE_TO_PROBE_Z_OFFSET -2.83 // 0.3 from 0
+#define NOZZLE_TO_PROBE_Z_OFFSET -2.78 // 0.3 from 0
 #define NOZZLE_TO_PROBE_OFFSET { NOZZLE_TO_PROBE_X_OFFSET, NOZZLE_TO_PROBE_Y_OFFSET, NOZZLE_TO_PROBE_Z_OFFSET }
 
 // Most probes should stay away from the edges of the bed, but
