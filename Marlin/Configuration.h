@@ -935,7 +935,7 @@
  * Override with M203
  *                                      X, Y, Z [, I [, J [, K]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 300, 300, 5, 250 }
+#define DEFAULT_MAX_FEEDRATE          { 300, 300, 5, 25 }
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
@@ -1182,7 +1182,7 @@
  */
 #define NOZZLE_TO_PROBE_X_OFFSET 28
 #define NOZZLE_TO_PROBE_Y_OFFSET -15
-#define NOZZLE_TO_PROBE_Z_OFFSET -2.78 // 0.3 from 0
+#define NOZZLE_TO_PROBE_Z_OFFSET -2.79
 #define NOZZLE_TO_PROBE_OFFSET { NOZZLE_TO_PROBE_X_OFFSET, NOZZLE_TO_PROBE_Y_OFFSET, NOZZLE_TO_PROBE_Z_OFFSET }
 
 // Most probes should stay away from the edges of the bed, but
@@ -1382,7 +1382,7 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 160
+#define Z_MAX_POS 180
 //#define I_MIN_POS 0
 //#define I_MAX_POS 50
 //#define J_MIN_POS 0
