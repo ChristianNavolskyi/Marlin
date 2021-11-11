@@ -260,6 +260,7 @@
 
   #define PARKING_EXTRUDER_PARKING_X { -78, 184 }     // X positions for parking the extruders
   #define PARKING_EXTRUDER_GRAB_DISTANCE 1            // (mm) Distance to move beyond the parking point to grab the extruder
+  //#define MANUAL_SOLENOID_CONTROL                   // Manual control of docking solenoids with M380 S / M381
 
   #if ENABLED(PARKING_EXTRUDER)
 
@@ -927,7 +928,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 500 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93.5 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1181,7 +1182,7 @@
  */
 #define NOZZLE_TO_PROBE_X_OFFSET 28
 #define NOZZLE_TO_PROBE_Y_OFFSET -15
-#define NOZZLE_TO_PROBE_Z_OFFSET -2.78 // 0.3 from 0
+#define NOZZLE_TO_PROBE_Z_OFFSET -2.79
 #define NOZZLE_TO_PROBE_OFFSET { NOZZLE_TO_PROBE_X_OFFSET, NOZZLE_TO_PROBE_Y_OFFSET, NOZZLE_TO_PROBE_Z_OFFSET }
 
 // Most probes should stay away from the edges of the bed, but
@@ -1381,7 +1382,7 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 160
+#define Z_MAX_POS 180
 //#define I_MIN_POS 0
 //#define I_MAX_POS 50
 //#define J_MIN_POS 0
