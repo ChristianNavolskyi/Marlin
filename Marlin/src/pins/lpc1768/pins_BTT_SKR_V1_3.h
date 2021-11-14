@@ -131,6 +131,7 @@
   #define Y_CS_PIN                         P1_01
 #endif
 
+// left
 #define Z_STEP_PIN                         P0_22
 #define Z_DIR_PIN                          P2_11
 #define Z_ENABLE_PIN                       P0_21
@@ -139,6 +140,7 @@
 #endif
 
 // --------- Added for dual Z-axis --------------
+// right
 #define Z2_STEP_PIN                         P2_13
 #define Z2_DIR_PIN                          P0_11
 #define Z2_ENABLE_PIN                       P2_12
