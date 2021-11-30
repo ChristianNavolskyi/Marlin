@@ -602,9 +602,9 @@
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
     // FAN on
-    #define DEFAULT_Kp  35.13
-    #define DEFAULT_Ki   3.54
-    #define DEFAULT_Kd  87.17
+    #define DEFAULT_Kp   49.92
+    #define DEFAULT_Ki    5.33
+    #define DEFAULT_Kd  116.85
     // FAN off
     //#define DEFAULT_Kp  33.34
     //#define DEFAULT_Ki   2.95
