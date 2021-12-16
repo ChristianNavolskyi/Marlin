@@ -602,9 +602,9 @@
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
     // FAN on
-    #define DEFAULT_Kp   49.92
-    #define DEFAULT_Ki    5.33
-    #define DEFAULT_Kd  116.85
+    #define DEFAULT_Kp   50.67
+    #define DEFAULT_Ki    5.13
+    #define DEFAULT_Kd  125.22
     // FAN off
     //#define DEFAULT_Kp  33.34
     //#define DEFAULT_Ki   2.95
@@ -2106,7 +2106,7 @@
  * SD Card support is disabled by default. If your controller has an SD slot,
  * you must uncomment the following option or it won't work.
  */
-//#define SDSUPPORT
+#define SDSUPPORT
 
 /**
  * SD CARD: ENABLE CRC
